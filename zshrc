@@ -22,13 +22,14 @@ plug "hlissner/zsh-autopair"
 
 # Aliases
 alias n="nvim"
+alias .="source $HOME/.zshrc"
 alias zshrc="nvim $HOME/.zshrc"
 alias kc="nvim $HOME/.config/kitty/kitty.conf"
 alias zc="nvim $HOME/.config/zellij/config.kdl"
 alias ac="nvim $HOME/.config/alacritty/alacritty.yml"
 
 # starship.rs
-export STARSHIP_CONFIG=/home/grim_reaper/.config/starship/starship.toml
+export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 # zellij
